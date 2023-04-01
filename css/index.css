@@ -1,0 +1,156 @@
+html{
+    font-family: 'Noto Sans', sans-serif;
+    position: relative;
+}
+
+.navbar{
+    background-color: #F3F1F2;
+}
+
+.red{
+    color: #BD2F26;
+}
+
+.login{
+    border: 1px solid #BD2F26;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.login:hover{
+    color: #fff;
+    background-color: #BD2F26;
+}
+
+.menu{
+    background-color: #fff ;
+}
+
+.hero{
+    background-image: url(https://aki168.github.io/sakeholic/media/main-section-text.png);
+    height: 668px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.section-title{
+    letter-spacing: 8px;
+}
+
+.section-subtitle{
+    letter-spacing: 5px;
+    font-size: 24px;
+}
+
+.main{
+    width: 75%;
+}
+
+.card{
+    width: 75%;
+}
+
+.heart{
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+}
+
+.left{
+    animation: left 2.5s forwards;
+}
+
+@keyframes left {
+    0% {
+        opacity: 0;
+        left: -100%; /* 初始位置 */
+    }
+    100% {
+        opacity: 1;
+        left: 0; /* 終止位置 */
+    }
+}
+
+.right{
+    animation: right 2.5s forwards;
+}
+
+@keyframes right {
+    0% {
+        opacity: 0;
+        right: -100%; /* 初始位置 */
+    }
+    100% {
+        opacity: 1;
+        right: 0; /* 終止位置 */
+    }
+}
+
+.image{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top: 40px;
+    z-index: 1000;
+}
+
+.slider {
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+  
+.slide {
+    display: inline-block;
+    width: 50%; /* 每個 slide 寬度為整個視窗的寬度 */
+    height: 50%; /* 每個 slide 高度為整個視窗的高度 */
+}
+
+.bottom{
+    position: relative;
+    bottom: -100px;
+    animation: bottom 2.5s forwards;
+    opacity: 0;
+}
+
+@keyframes bottom {
+    100% { 
+        bottom: 0; 
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 576px)
+{
+    .navbar{
+        background-color: #000;
+    }
+
+    .title{
+        color: #fff;
+    }
+
+    .hero{
+        background-image: url(https://aki168.github.io/sakeholic/media/main-section-md.png);
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .section-title{
+        font-size: 20px;
+    }
+
+    .section-subtitle{
+        font-size: 16px;
+    }
+
+    .slide{
+        width: 95%;
+        height: 95%;
+    }
+
+    .main{
+        width: 100%;
+    }
+}
