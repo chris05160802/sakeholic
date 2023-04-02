@@ -1,0 +1,64 @@
+html{
+    font-family: 'Noto Sans', sans-serif;
+    position: relative;
+}
+
+.navbar{
+    background-color: #F3F1F2;
+}
+
+.red{
+    color: #BD2F26;
+}
+
+.login{
+    border: 1px solid #BD2F26;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.login:hover{
+    color: #fff;
+    background-color: #BD2F26;
+}
+
+.menu{
+    background-color: #fff ;
+}
+
+.google-icon{
+    width: 16px;
+    height: 16px;
+}
+
+input{
+    outline: none;
+}
+
+input::placeholder{
+    color: #000;
+}
+
+.bg-red{
+    background-color: #BD2F26;
+}
+
+.bg-red:hover{
+    background-color: #a12820;
+}
+
+.bg-red:focus{
+    background-color: #a12820;
+}
+
+@media screen and (max-width: 576px)
+{
+    .navbar{
+        background-color: #000;
+    }
+
+    .title{
+        color: #fff;
+    }
+
+}
