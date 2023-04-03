@@ -1,0 +1,154 @@
+html{
+    font-family: 'Noto Sans', sans-serif;
+    position: relative;
+}
+
+h2{
+    color: #BD2F26;
+}
+
+.navbar{
+    background-color: #F3F1F2;
+}
+
+.red{
+    color: #BD2F26;
+}
+
+.login{
+    border: 1px solid #BD2F26;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.login:hover{
+    color: #fff;
+    background-color: #BD2F26;
+}
+
+.menu{
+    background-color: #fff ;
+}
+
+.about{
+    border-bottom: 3px solid #BD2F26;
+}
+
+.section-title{
+    letter-spacing: 8px;
+}
+
+.section-subtitle{
+    letter-spacing: 5px;
+    font-size: 24px;
+}
+
+input{
+    outline: none;
+    width: 75%;
+}
+
+input::placeholder{
+    color: #000;
+}
+
+textarea{
+    min-height: 180px;
+    outline: none;
+    width: 75%;
+}
+
+textarea::placeholder{
+    color: #000;
+}
+
+.main{
+    width: 75%;
+}
+
+.btn{
+    background-color: #BD2F26;
+}
+
+.btn:hover{
+    background-color: #a12820
+}
+
+.btn:focus{
+    background-color: #a12820
+}
+
+.bg{
+    background-color: #F3F1F2;
+}
+
+.left{
+    animation: left 2.5s forwards;
+}
+
+@keyframes left {
+    from {
+        opacity: 0;
+        left: -50%;
+    }
+    to {
+        opacity: 1;
+        left: 0; /* 終止位置 */
+    }
+}
+
+.image{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+.right{
+    animation: right 2.5s forwards;
+}
+
+@keyframes right {
+    from {
+        opacity: 0;
+        right: -50%;
+    }
+    to {
+        opacity: 1;
+        right: 0; /* 終止位置 */
+    }
+}
+
+@media screen and (max-width: 576px)
+{
+    .navbar{
+        background-color: #000;
+    }
+
+    .title{
+        color: #fff;
+    }
+
+    .section-title{
+        font-size: 20px;
+    }
+
+    .section-subtitle{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    input{
+        width: 100%;
+    }
+    
+    textarea{
+        width: 100%;
+    }
+
+    .main{
+        width: 100%;
+    }
+}

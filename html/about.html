@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">     
+    <link rel="stylesheet" href="../css/about.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar w-100 mb-4">
+        <div class="container p-0">
+            <div class="container-fluid px-0 py-4 d-flex  flex-sm-column flex-lg-row justify-content-between align-items-start">
+                <a class="navbar-brand fs-4 fw-bold m-0 d-inline ms-3 ms-lg-0 title" href="./index.html">SAKEHOLIC BOOK</a>
+                <div class="d-none d-sm-block">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item mx-3 my-2">
+                            <a class="nav-link text-dark p-0 about" href="#">關於小酌</a>
+                        </li>
+                        <li class="nav-item mx-3 my-2">
+                            <a class="nav-link text-dark p-0" href="#">找日本酒</a>
+                        </li>
+                        <li class="nav-item mx-3 my-2">
+                            <a class="nav-link text-dark p-0" href="#">會員專區</a>
+                        </li>
+                        <li class="nav-item mx-3 my-2">
+                            <a class="text-decoration-none" href="../html/login.html">
+                                <small class="red login px-4 py-1 fw-bold">登入</small>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-sm-none mx-4">
+                    <button class="navbar-toggler menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body d-flex justify-content-center">
+                            <ul class="nav d-flex flex-column justify-content-evenly text-center">
+                                <li class="nav-item mx-3 my-2">
+                                    <a class="nav-link text-dark p-0 fs-2" href="#">關於小酌</a>
+                                </li>
+                                <li class="nav-item mx-3 my-2">
+                                    <a class="nav-link text-dark p-0 fs-2" href="#">找日本酒</a>
+                                </li>
+                                <li class="nav-item mx-3 my-2">
+                                    <a class="nav-link text-dark p-0 fs-2" href="#">會員專區</a>
+                                </li>
+                                <li class="nav-item mx-3 my-2">
+                                    <a class="text-decoration-none" href="../html/login.html">
+                                        <small class="red login px-4 py-1 fw-bold fs-2">登入</small>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="mb-5">
+        <div class="container">
+            <div class="mb-4">
+                <div class="d-flex flex-row justify-content-between align-items-center">
+                    <h1 class="fw-bold section-title">聯絡我們</h1>
+                    <hr class="w-50">
+                </div>
+                <p class="section-subtitle fw-light">お問い合わせ</p>
+            </div>
+            <form action="" class="d-flex flex-column mb-3">
+                <input type="text" placeholder="姓名 / 暱稱" name="nickname"  class="mx-0 mx-md-auto  px-2 py-3 border border-secondary-subtle rounded-3 mb-4 input">
+                <input type="text" placeholder="您的電子信箱" name="email"  class="mx-0 mx-md-auto  px-2 py-3 border border-secondary-subtle rounded-3 mb-4 input">
+                <input type="text" placeholder="主旨" name="title"  class="mx-0 mx-md-auto  px-2 py-3 border border-secondary-subtle rounded-3 mb-4 input">
+                <textarea name="message" placeholder="訊息內容" class="mx-0 mx-md-auto px-2 py-3 border border-secondary-subtle rounded-3"></textarea>
+            </form>
+            <div class="text-end mx-0 mx-md-auto main">
+                <div class="btn px-3 py-1">
+                    <a href="#" class="m-0 text-white text-decoration-none">送出  →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mb-5">
+        <div class="container p-sm-0">
+            <div class="row px-2 px-md-5 py-1 row-cols-1 row-cols-md-2 d-flex flex-row justify-content-evenly">
+                <div class="col-md-6 col-lg-5 col-xl-4 ps-4 pe-0 pe-md-3 pe-lg-0 py-5 mb-5 mb-md-0 bg left position-relative d-flex flex-column justify-content-center">
+                    <div class="mb-4">
+                        <h2 class="fw-bold">製作初衷</h2>
+                        <p class="mb-4">「小酌圖鑑」日本酒檢索網站<br>供喜歡日本酒，卻總感中文資訊匱乏的人</p>
+                        <p class="mb-4">能瀏覽酒廠、酒名、產地等資訊<br>查詢在居酒屋、超市看到的日本酒<br>得知各項風味量表、建議喝法等情報</p>
+                        <p class="mb-4">自身也需要這樣的服務，因此投入製作💻</p>
+                    </div>
+                    <div>
+                        <h2 class="fw-bold">特別感謝</h2>
+                        <ul class="list-unstyled">
+                            <li class="mb-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20" height="20" fill="currentColor" class="me-1">
+                                    <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8.5 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 11a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm5-5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm-11 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9.743-4.036a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm-7.779 7.779a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm7.072 0a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707zM3.757 4.464a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707z"></path>
+                                </svg>
+                                喜歡喝日本酒的大家
+                            </li>
+                            <li class="mb-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20" height="20" fill="currentColor" class="me-1">
+                                    <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8.5 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 11a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm5-5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm-11 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9.743-4.036a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm-7.779 7.779a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm7.072 0a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707zM3.757 4.464a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707z"></path>
+                                </svg>
+                                台中華美街各大日系居酒屋🍻🍶
+                            </li>
+                            <li class="mb-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20" height="20" fill="currentColor" class="me-1">
+                                    <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8.5 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 11a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm5-5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm-11 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9.743-4.036a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm-7.779 7.779a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm7.072 0a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707zM3.757 4.464a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707z"></path>
+                                </svg>
+                                さけのわデータ
+                            </li>
+                            <li class="mb-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20" height="20" fill="currentColor" class="me-1">
+                                    <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8.5 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 11a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm5-5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm-11 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9.743-4.036a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm-7.779 7.779a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm7.072 0a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707zM3.757 4.464a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707z"></path>
+                                </svg>
+                                日本酒記録アプリSakenote
+                            </li>
+                            <li class="mb-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20" height="20" fill="currentColor" class="me-1">
+                                    <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8.5 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 11a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm5-5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm-11 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9.743-4.036a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm-7.779 7.779a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm7.072 0a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707zM3.757 4.464a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707z"></path>
+                                </svg>
+                                22夏切版直播班 第17小組
+                            </li>
+                            <li class="mb-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20" height="20" fill="currentColor" class="me-2">
+                                    <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8.5 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 11a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm5-5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm-11 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9.743-4.036a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm-7.779 7.779a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm7.072 0a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707zM3.757 4.464a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707z"></path>
+                                </svg>
+                                hex school 洧杰校長
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-4 col-xl-3 ps-4 pe-0 pe-md-3 pe-lg-0 py-5 bg-dark position-relative right text-white d-flex flex-column justify-content-center">
+                    <div class="mb-4">
+                        <h3 class="h2 fw-bold mb-3">版權聲明</h3>
+                        <img src="https://aki168.github.io/sakeholic/media/aki-icon.jpg" alt="" class="image mb-3 d-block">
+                        <p class="fw-lighter">由AKI CHENG製作之個人作品<br>若有相關聯繫或商業合作意願<br>歡迎填寫站內聯絡表單</p>
+                    </div>
+                    <div>
+                        <h5 class="fw-bolder">亦可直接來信與我聯繫</h5>
+                        <ul class="list-unstyled fw-lighter">
+                            <li class="mb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20" height="20" fill="currentColor" class="me-2">
+                                    <path d="M4 4a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3zm0-1h8a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4zm2.646 1A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3H6.646z"></path><path d="M11.793 8.5H9v-1h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.354-.146l-.853-.854zM5 7c0 .552-.448 0-1 0s-1 .552-1 0a1 1 0 0 1 2 0z"></path>
+                                </svg>
+                                mail:ahsi.aki@gmail.com
+                            </li>
+                            <li class="mb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20" height="20" fill="currentColor" class="me-2">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"></path>
+                                </svg>
+                                telegram:@ahsiaki
+                            </li>
+                            <li class="mb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="20" height="20" fill="currentColor" class="me-2">
+                                    <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"></path>
+                                </svg>
+                                Discord:bakiii #2652
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-white p-5 px-lg-0 fw-normal d-none d-sm-block">
+        <div class="container p-0">
+            <div class="d-flex flex-row justify-content-around fw-normal">
+                <div>
+                    <h3 class="fs-1 mb-3">SAKEHOLIC <br>BOOK</h2>
+                    <p class="m-0 fs-5">小酌圖鑑</p>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <h4 class="mb-3">SITEMAP</h4>
+                    <a href="./about.html" class="my-2 text-decoration-none text-white fs-5">關於小酌</a>
+                    <a href="#" class="my-2 text-decoration-none text-white fs-5">找日本酒</a>
+                    <a href="#" class="my-2 text-decoration-none text-white fs-5">會員專區</a>
+                </div>
+                <div>
+                    <h4 class="mb-3">COPYRIGHT</h4>
+                    <small class="fw-light footer-small">©2022 SAKEHOLIC BOOK <br>BY AKI CHENG <br>All rights reserved.</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="bg-dark text-white text-center fw-normal d-block d-sm-none">
+        <div class="container py-5">
+            <div class="mb-5">
+                <h3 class="fs-1 mb-1">SAKEHOLIC BOOK</h3>
+                <p class="fs-5 mb-0">小酌圖鑑。</p>
+            </div>
+            <div class="d-flex flex-column align-items-center my-4">
+                <h3 class="mb-3 h2">SITEMAP</h2>
+                <a href="./about.html" class="fs-5 mb-3 text-white text-decoration-none">關於小酌</a>
+                <a href="#" class="fs-5 mb-3 text-white text-decoration-none">找日本酒</a>
+                <a href="#" class="fs-5 mb-3 text-white text-decoration-none">會員專區</a>
+            </div>
+            <small class="fw-light">©2022 SAKEHOLIC BOOK All rights reserved.</small>
+        </div>
+    </footer>
+</body>
+</html>
