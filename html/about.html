@@ -78,10 +78,22 @@
                 <p class="section-subtitle fw-light">お問い合わせ</p>
             </div>
             <form action="" class="d-flex flex-column mb-3">
-                <input type="text" placeholder="姓名 / 暱稱" name="nickname"  class="mx-0 mx-md-auto  px-2 py-3 border border-secondary-subtle rounded-3 mb-4 input">
-                <input type="text" placeholder="您的電子信箱" name="email"  class="mx-0 mx-md-auto  px-2 py-3 border border-secondary-subtle rounded-3 mb-4 input">
-                <input type="text" placeholder="主旨" name="title"  class="mx-0 mx-md-auto  px-2 py-3 border border-secondary-subtle rounded-3 mb-4 input">
-                <textarea name="message" placeholder="訊息內容" class="mx-0 mx-md-auto px-2 py-3 border border-secondary-subtle rounded-3"></textarea>
+                <div class="form-floating mb-3 mx-auto">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput" class="">姓名 / 暱稱</label>
+                </div>
+                <div class="form-floating mb-3 mx-auto">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput" class="">您的電子信箱</label>
+                </div>                            
+                <div class="form-floating mb-3 mx-auto">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput" class="">主旨</label>
+                </div>      
+                <div class="form-floating .textarea mx-auto">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">訊息內容</label>
+                </div>          
             </form>
             <div class="text-end mx-0 mx-md-auto main">
                 <div class="btn px-3 py-1">
