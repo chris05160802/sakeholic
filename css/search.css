@@ -1,0 +1,616 @@
+html{
+    font-family: 'Noto Sans', sans-serif;
+    position: relative;
+}
+
+h2{
+    color: #BD2F26;
+}
+
+p{
+    margin: 0;
+}
+
+.navbar{
+    background-color: #F3F1F2;
+}
+
+.red{
+    color: #BD2F26;
+}
+
+.login{
+    border: 1px solid #BD2F26;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.login:hover{
+    color: #fff;
+    background-color: #BD2F26;
+}
+
+.menu{
+    background-color: #fff ;
+}
+
+.search{
+    border-bottom: 3px solid #BD2F26;
+}
+
+.section-title{
+    letter-spacing: 8px;
+}
+
+.section-subtitle{
+    letter-spacing: 5px;
+    font-size: 24px;
+}
+  
+.wrap{
+    width: 767px;
+    height: 482px;
+}
+
+.items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.items:hover{
+    opacity: 0.5;
+}
+/** northeast **/
+.northeast{
+    left: 638px;
+}
+
+.purple{
+    background-color: #7478C2;
+    border: 1px solid #7478C2;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.hokkaido{
+    width: 133px;
+    height: 70px;
+    top: 0;
+    left: 0;
+}
+
+.aomori{
+    width: 93px;
+    height: 43px;
+    top: 96px;
+    left: 21px;
+}
+
+.akita{
+    width: 67px;
+    height: 42px;
+    top: 141px;
+    left: 0;
+}
+
+.iwate{
+    width: 67px;
+    height: 42px;
+    top: 141px;
+    left: 70px;
+}
+
+.yamagata{
+    width: 67px;
+    height: 42px;
+    top: 185px;
+    left: 0;
+}
+
+.miyagi{
+    width: 67px;
+    height: 42px;
+    top: 185px;
+    left: 70px;
+}
+
+.fukushima{
+    width: 67px;
+    height: 42px;
+    top: 229px;
+    left: 70px;
+}
+/** northeast **/
+/** kanto **/
+.kanto{
+    top: 265px;
+    left: 623px;
+}
+
+.blue{
+    background-color: #31BECA;
+    border: 1px solid #31BECA;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.gunma{
+    width: 50px;
+    height: 42px;
+    top: 8px;
+    left: -3px;
+}
+
+.tochigi{
+    width: 50px;
+    height: 42px;
+    top: 8px;
+    left: 48px;
+}
+
+.ibaraki{
+    width: 52px;
+    height: 87px;
+    top: 8px;
+    left: 100px;
+}
+
+.saitama{
+    width: 100px;
+    height: 43px;
+    top: 52px;
+    left: -3px;
+}
+
+.chiba{
+    width: 52px;
+    height: 87px;
+    top: 97px;
+    left: 100px;
+}
+
+.tokyo{
+    width: 100px;
+    height: 43px;
+    top: 97px;
+    left: -3px;
+}
+
+.kanagawa{
+    width: 67px;
+    height: 42px;
+    top: 142px;
+    left: -3px;
+}
+/** kanto **/
+/** middle **/
+.middle{
+    top: 223px;
+    left: 438px;
+}
+
+.green{
+    background-color: #4AB969;
+    border: 1px solid #4AB969;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.niigata{
+    width: 85px;
+    height: 42px;
+    top: 6px;
+    left: 182px;
+}
+
+.toyama{
+    width: 67px;
+    height: 42px;
+    top: 6px;
+    left: 113px;
+}
+
+.ishikawa{
+    width: 50px;
+    height: 58px;
+    top: 6px;
+    left: 60px;
+}
+
+.fukui{
+    width: 68px;
+    height: 42px;
+    top: 6px;
+    left: -10px;
+}
+
+.nagano{
+    width: 67px;
+    height: 87px;
+    top: 50px;
+    left: 113px;
+}
+
+.gifu{
+    width: 50px;
+    height: 58px;
+    top: 66px;
+    left: 60px;
+}
+
+.yamanashi{
+    width: 67px;
+    height: 42px;
+    top: 140px;
+    left: 113px;
+}
+
+.aichi{
+    width: 50px;
+    height: 58px;
+    top: 126px;
+    left: 60px;
+}
+
+.shizuoka{
+    width: 67px;
+    height: 42px;
+    top: 184px;
+    left: 113px;
+}
+/** middle **/
+/** kinki **/
+.kinki{
+    top: 223px;
+    left: 320px;
+}
+
+.yellow{
+    background-color: #B0B72F;
+    border: 1px solid #B0B72F;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.kyoto{
+    width: 67px;
+    height: 87px;
+    top: 6px;
+    left: 38px;
+}
+
+.shiga{
+    width: 68px;
+    height: 42px;
+    top: 50px;
+    left: 108px;
+}
+
+.osaka{
+    width: 67px;
+    height: 88px;
+    top: 96px;
+    left: 39px;
+}
+
+.nara{
+    width: 33px;
+    height: 89px;
+    top: 95px;
+    left: 108px;
+}
+
+.triple{
+    width: 33px;
+    height: 89px;
+    top: 95px;
+    left: 143px;
+}
+
+.wakayama{
+    width: 113px;
+    height: 40px;
+    top: 186px;
+    left: 39px;
+}
+
+.hyogo{
+    width: 51px;
+    height: 100px;
+    top: 6px;
+    left: -16px;
+}
+/** kinki **/
+/** china **/
+.china{
+    top: 223px;
+    left: 169px;
+}
+
+.orange{
+    background-color: #EF9F27;
+    border: 1px solid #EF9F27;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.tottori{
+    width: 50px;
+    height: 49px;
+    top: 6px;
+    left: 83px;
+}
+
+.okayama{
+    width: 50px;
+    height: 49px;
+    top: 57px;
+    left: 83px;
+}
+
+.shimane{
+    width: 51px;
+    height: 49px;
+    top: 6px;
+    left: 30px;
+}
+
+.hiroshima{
+    width: 51px;
+    height: 49px;
+    top: 57px;
+    left: 30px;
+}
+
+.yamaguchi{
+    width: 50px;
+    height: 100px;
+    top: 6px;
+    left: -22px;
+}
+/** china **/
+/** shikoku **/
+.shikoku{
+    top: 350px;
+    left: 169px;
+}
+
+.brown{
+    background-color: #D08F68;
+    border: 1px solid #D08F68;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.kagawa{
+    width: 92px;
+    height: 42px;
+    top: 13px;
+    left: 72px;
+}
+
+.ehime{
+    width: 92px;
+    height: 42px;
+    top: 13px;
+    left: -22px;
+}
+
+.tokushima{
+    width: 92px;
+    height: 42px;
+    top: 57px;
+    left: 72px;
+}
+
+.kochi{
+    width: 92px;
+    height: 42px;
+    top: 57px;
+    left: -22px;
+}
+/** shikoku **/
+/** kyushu **/
+.kyushu{
+    top: 235px;
+    left: 0;
+}
+
+.pink{
+    background-color: #FF7575;
+    border: 1px solid #FF7575;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.fukuoka{
+    width: 50px;
+    height: 50px;
+    top: 9px;
+    left: 78px;
+}
+
+.saga{
+    width: 50px;
+    height: 50px;
+    top: 9px;
+    left: 25px;
+}
+
+.nagasaki{
+    width: 50px;
+    height: 50px;
+    top: 9px;
+    left: -28px;
+}
+
+.oita{
+    width: 50px;
+    height: 50px;
+    top: 61px;
+    left: 78px;
+}
+
+.kumamoto{
+    width: 50px;
+    height: 100px;
+    top: 61px;
+    left: 25px;
+}
+
+.miyazaki{
+    width: 50px;
+    height: 50px;
+    top: 113px;
+    left: 78px;
+}
+
+.kagoshima{
+    width: 68px;
+    height: 49px;
+    top: 165px;
+    left: 60px;
+}
+
+.okinawa{
+    width: 50px;
+    height: 50px;
+    top: 214px;
+    left: -28px;
+}
+/** kyushu **/
+.OneRow{
+    display: grid;
+    grid-template-rows: repeat(1,42px);
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 1px;
+    grid-column-gap: 1px;
+}
+
+.TwoRow{
+    display: grid;
+    grid-template-rows: repeat(2,42px);
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 1px;
+    grid-column-gap: 1px;
+}
+
+.ThreeRow{
+    display: grid;
+    grid-template-rows: repeat(3,42px);
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 1px;
+    grid-column-gap: 1px;
+}
+
+.main-wrap .items{
+    font-size: 16px;
+}
+
+.main-wrap .purple, .main-wrap .blue, .main-wrap .green, .main-wrap .yellow, .main-wrap .orange, .main-wrap .brown, .main-wrap .pink{
+    border-radius: 0;
+}
+
+.section{
+    max-width: 1320px;
+}
+
+.collapsible {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+  
+.option .collapsible::after {
+    content: "\25BC";
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 23px;
+    margin-left: 0.5rem;
+    transition: transform 0.5s ease;
+}
+  
+.option .rotate::after {
+    transform: rotate(180deg);
+}
+  
+.option .show {
+    max-height: 1000px;
+}
+  
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+
+.thead{
+    background-color: #F3F1F2;
+}
+
+.dark-red{
+    color: #8B0000;
+}
+
+.tag{
+    background-color: #C8C4C4;
+    border: 1px solid #C8C4C4;
+    border-radius: 8px;
+}
+
+.tag-text{
+    color: #C8C4C4;
+}
+
+.image{
+    width: 49%;
+    height: auto;
+}
+
+.heart{
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 576px)
+{
+    .navbar{
+        background-color: #000;
+    }
+
+    .title{
+        color: #fff;
+    }
+
+    .section-title{
+        font-size: 20px;
+    }
+
+    .section-subtitle{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .wrap{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 851px){
+    .main-wrap{
+        display: none;
+    }
+}

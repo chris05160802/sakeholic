@@ -96,7 +96,6 @@ html{
 
 .slider {
     overflow-x: scroll;
-    white-space: nowrap;
 }
   
 .slide {
