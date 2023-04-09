@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">     
-    <link rel="stylesheet" href="../css/search.css">
+    <link rel="stylesheet" href="../css/popular.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
     <title>Document</title>
@@ -25,10 +25,10 @@
                             <a class="nav-link text-dark p-0" href="../html/about.html">關於小酌</a>
                         </li>
                         <li class="nav-item mx-3 my-2">
-                            <a class="nav-link text-dark p-0 search" href="../html/search.html">產地查詢</a>
+                            <a class="nav-link text-dark p-0" href="../html/search.html">產地查詢</a>
                         </li>
                         <li class="nav-item mx-3 my-2">
-                            <a class="nav-link text-dark p-0" href="../html/popular.html">熱門排行</a>
+                            <a class="nav-link text-dark p-0 popular" href="#">熱門排行</a>
                         </li>
                         <li class="nav-item mx-3 my-2">
                             <a class="nav-link text-dark p-0" href="#">酒品總覽</a>
@@ -57,7 +57,7 @@
                                     <a class="nav-link text-dark p-0 fs-2" href="../html/search.html">產地查詢</a>
                                 </li>
                                 <li class="nav-item mx-3 my-2">
-                                    <a class="nav-link text-dark p-0 fs-2" href="../html/popular.html">熱門排行</a>
+                                    <a class="nav-link text-dark p-0 fs-2" href="#">熱門排行</a>
                                 </li>
                                 <li class="nav-item mx-3 my-2">
                                     <a class="nav-link text-dark p-0 fs-2" href="#">酒品總覽</a>
@@ -74,212 +74,66 @@
             </div>
         </div>
     </nav>
-    <section class="mb-5">
+    <section>
         <div class="container">
             <div class="mb-4">
                 <div class="d-flex flex-row justify-content-between align-items-center">
-                    <h1 class="fw-bold section-title">產地查詢</h1>
+                    <h1 class="fw-bold section-title">日本酒排名</h1>
                     <hr class="w-50">
                 </div>
-                <p class="section-subtitle fw-light">地域別 厳選された日本酒</p>
-            </div>
-        </div>
-        <div class="my-5">
-            <div class="wrap mx-auto position-relative">
-                <div class="northeast position-absolute">
-                    <p class="hokkaido items position-absolute purple">北海道</p>
-                    <p class="aomori items position-absolute purple">青森</p>
-                    <p class="akita items position-absolute purple">秋田</p>
-                    <p class="iwate items position-absolute purple">岩手</p>
-                    <p class="yamagata items position-absolute purple">山形</p>
-                    <p class="miyagi items position-absolute purple">宮城</p>
-                    <p class="fukushima items position-absolute purple">福島</p>
-                </div>
-                <div class="kanto position-absolute">
-                    <p class="gunma items position-absolute blue">群馬</p>
-                    <p class="tochigi items position-absolute blue">栃木</p>
-                    <p class="ibaraki items position-absolute blue">茨城</p>
-                    <p class="saitama items position-absolute blue">埼玉</p>
-                    <p class="chiba items position-absolute blue">千葉</p>
-                    <p class="tokyo items position-absolute blue">東京</p>
-                    <p class="kanagawa items position-absolute blue">神奈川</p>
-                </div>
-                <div class="middle position-absolute">
-                    <p class="niigata items position-absolute green">新瀉</p>
-                    <p class="toyama items position-absolute green">富山</p>
-                    <p class="ishikawa items position-absolute green">石川</p>
-                    <p class="fukui items position-absolute green">福井</p>
-                    <p class="nagano items position-absolute green">長野</p>
-                    <p class="gifu items position-absolute green">岐阜</p>
-                    <p class="yamanashi items position-absolute green">山梨</p>
-                    <p class="aichi items position-absolute green">愛知</p>
-                    <p class="shizuoka items position-absolute green">靜岡</p>
-                </div>
-                <div class="kinki position-absolute">
-                    <p class="kyoto items position-absolute yellow">京都</p>
-                    <p class="shiga items position-absolute yellow">滋賀</p>
-                    <p class="osaka items position-absolute yellow">大阪</p>
-                    <p class="nara items position-absolute yellow">奈良</p>
-                    <p class="triple items position-absolute yellow">三重</p>
-                    <p class="wakayama items position-absolute yellow">和歌山</p>
-                    <p class="hyogo items position-absolute yellow">兵庫</p>
-                </div>
-                <div class="china position-absolute">
-                    <p class="tottori items position-absolute orange">鳥取</p>
-                    <p class="okayama items position-absolute orange">岡山</p>
-                    <p class="shimane items position-absolute orange">島根</p>
-                    <p class="hiroshima items position-absolute orange">広島</p>
-                    <p class="yamaguchi items position-absolute orange">山口</p>
-                </div>
-                <div class="shikoku position-absolute">
-                    <p class="kagawa items position-absolute brown">香川</p>
-                    <p class="ehime items position-absolute brown">愛媛</p>
-                    <p class="tokushima items position-absolute brown">徳島</p>
-                    <p class="kochi items position-absolute brown">高知</p>
-                </div>
-                <div class="kyushu position-absolute">
-                    <p class="fukuoka items position-absolute pink">福岡</p>
-                    <p class="saga items position-absolute pink">佐賀</p>
-                    <p class="nagasaki items position-absolute pink">長崎</p>
-                    <p class="oita items position-absolute pink">大分</p>
-                    <p class="kumamoto items position-absolute pink">熊本</p>
-                    <p class="miyazaki items position-absolute pink">宮崎</p>
-                    <p class="kagoshima items position-absolute pink">鹿児島</p>
-                    <p class="okinawa items position-absolute pink">沖繩</p>
-                </div>
-            </div>
-            <div class="main-wrap">
-                <div class="container">
-                    <div class="my-3">
-                        <div class="text-center mb-3">
-                            <p>北海道・東北</p>
-                        </div>
-                        <div class="w-100 TwoRow">
-                            <p class="items purple">北海道</p>
-                            <p class="items purple">青森</p>
-                            <p class="items purple">秋田</p>
-                            <p class="items purple">岩手</p>
-                            <p class="items purple">山形</p>
-                            <p class="items purple">宮城</p>
-                            <p class="items purple">福島</p>
-                        </div>
-                    </div>
-                    <div class="my-3">
-                        <div class="text-center mb-3">
-                            <p>関東</p>
-                        </div>
-                        <div class="w-100 TwoRow">
-                            <p class="items blue">群馬</p>
-                            <p class="items blue">栃木</p>
-                            <p class="items blue">茨城</p>
-                            <p class="items blue">埼玉</p>
-                            <p class="items blue">千葉</p>
-                            <p class="items blue">東京</p>
-                            <p class="items blue">神奈川</p>
-                        </div>
-                    </div>
-                    <div class="my-3">
-                        <div class="text-center mb-3">
-                            <p>中部</p>
-                        </div>
-                        <div class="w-100 ThreeRow">
-                            <p class="items green">新瀉</p>
-                            <p class="items green">富山</p>
-                            <p class="items green">石川</p>
-                            <p class="items green">福井</p>
-                            <p class="items green">長野</p>
-                            <p class="items green">岐阜</p>
-                            <p class="items green">山梨</p>
-                            <p class="items green">愛知</p>
-                            <p class="items green">靜岡</p>
-                        </div>
-                    </div>
-                    <div class="my-3">
-                        <div class="text-center mb-3">
-                            <p>近畿</p>
-                        </div>
-                        <div class="w-100 TwoRow">
-                            <p class="items yellow">京都</p>
-                            <p class="items yellow">滋賀</p>
-                            <p class="items yellow">大阪</p>
-                            <p class="items yellow">奈良</p>
-                            <p class="items yellow">三重</p>
-                            <p class="items yellow">和歌山</p>
-                            <p class="items yellow">兵庫</p>
-                        </div>
-                    </div>
-                    <div class="my-3">
-                        <div class="text-center mb-3">
-                            <p>中国</p>
-                        </div>
-                        <div class="w-100 TwoRow">
-                            <p class="items orange">鳥取</p>
-                            <p class="items orange">岡山</p>
-                            <p class="items orange">島根</p>
-                            <p class="items orange">広島</p>
-                            <p class="items orange">山口</p>
-                        </div>
-                    </div>
-                    <div class="my-3">
-                        <div class="text-center mb-3">
-                            <p>四国</p>
-                        </div>
-                        <div class="w-100 OneRow">
-                            <p class="items brown">香川</p>
-                            <p class="items brown">愛媛</p>
-                            <p class="items brown">徳島</p>
-                            <p class="items brown">高知</p>
-                        </div>
-                    </div>
-                    <div class="my-3">
-                        <div class="text-center mb-3">
-                            <p>九州・沖縄</p>
-                        </div>
-                        <div class="w-100 TwoRow">
-                            <p class="items pink">福岡</p>
-                            <p class="items pink">佐賀</p>
-                            <p class="items pink">長崎</p>
-                            <p class="items pink">大分</p>
-                            <p class="items pink">熊本</p>
-                            <p class="items pink">宮崎</p>
-                            <p class="items pink">鹿児島</p>
-                            <p class="items pink">沖繩</p>
-                        </div>
-                    </div>
-                </div>
+                <p class="section-subtitle fw-light">日本酒ランキング</p>
             </div>
         </div>
     </section>
+    <div class="bg-cover"></div>
     <section class="section mx-auto mb-5">
         <div class="container">
-            <div class="table-title mb-3">
-                <h3 class="h2 mb-1">ALL</h3>
-                <p class="mb-2">請選擇您想探索的城市</p>
+            <div class="my-3">
+                <p class="text-end">日本酒ランキング 2022年冬季</p>
             </div>
             <div>
                 <div class="row thead m-0">
                     <div class="col-4 p-0">
+                        <p class="text-center fw-bold px-4 py-3">排名</p>
+                    </div>
+                    <div class="col-4 p-0">
                         <p class="text-center fw-bold px-4 py-3">酒款名稱</p>
                     </div>
                     <div class="col-4 p-0">
-                        <p class="text-center fw-bold px-4 py-3">酒藏名稱</p>
-                    </div>
-                    <div class="col-4 p-0">
-                        <p class="text-center fw-bold px-4 py-3">地區</p>
+                        <p class="text-center fw-bold px-4 py-3">評級</p>
                     </div>
                 </div>
                 <div class="border-bottom">
                     <div class="option position-relative">
                         <button class="collapsible bg-white p-4">
                             <div class="row">
-                                <div class="col-4">
-                                    <p class="dark-red text-center">糀おしろい</p>
+                                <div class="col-4 px-0 px-md-2">
+                                    <p class="text-center">1</p>
+                            </div>
+                                <div class="col-4 px-0 px-md-2">
+                                    <p class="dark-red text-center">新政</p>
                                 </div>
-                                <div class="col-4">
-                                    <p class="text-center">アリサワ</p>
-                                </div>
-                                <div class="col-4">
-                                    <p class="text-center">高知県</p>
+                                <div class="col-4 px-0 px-md-2">
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-half start" viewBox="0 0 16 16">
+                                            <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <p>4.5 / 5星</p>
+                                    </div>
                                 </div>
                             </div>
                         </button>
@@ -354,13 +208,32 @@
                         <button class="collapsible bg-white p-4">
                             <div class="row">
                                 <div class="col-4">
-                                    <p class="dark-red text-center">糀おしろい</p>
+                                    <p class="text-center">2</p>
                                 </div>
                                 <div class="col-4">
-                                    <p class="text-center">アリサワ</p>
+                                    <p class="text-center dark-red">風の森</p>
                                 </div>
-                                <div class="col-4">
-                                    <p class="text-center">高知県</p>
+                                <div class="col-4 px-0 px-md-2">
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-half start" viewBox="0 0 16 16">
+                                            <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <p>4.5 / 5星</p>
+                                    </div>
                                 </div>
                             </div>
                         </button>
@@ -435,13 +308,32 @@
                         <button class="collapsible bg-white p-4">
                             <div class="row">
                                 <div class="col-4">
-                                    <p class="dark-red text-center">男山</p>
+                                    <p class="text-center">3</p>
                                 </div>
                                 <div class="col-4">
-                                    <p class="text-center">男山</p>
+                                    <p class="text-center dark-red">十四代</p>
                                 </div>
-                                <div class="col-4">
-                                    <p class="text-center">北海道</p>
+                                <div class="col-4 px-0 px-md-2">
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-half start" viewBox="0 0 16 16">
+                                            <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <p>4.5 / 5星</p>
+                                    </div>
                                 </div>
                             </div>
                         </button>
@@ -636,13 +528,32 @@
                         <button class="collapsible bg-white p-4">
                             <div class="row">
                                 <div class="col-4">
-                                    <p class="dark-red text-center">糀おしろい</p>
+                                    <p class="text-center">4</p>
                                 </div>
                                 <div class="col-4">
-                                    <p class="text-center">アリサワ</p>
+                                    <p class="text-center dark-red">作</p>
                                 </div>
-                                <div class="col-4">
-                                    <p class="text-center">高知県</p>
+                                <div class="col-4 px-0 px-md-2">
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-half start" viewBox="0 0 16 16">
+                                            <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <p>4.5 / 5星</p>
+                                    </div>
                                 </div>
                             </div>
                         </button>
@@ -717,13 +628,32 @@
                         <button class="collapsible bg-white p-4">
                             <div class="row">
                                 <div class="col-4">
-                                    <p class="dark-red text-center">男山</p>
+                                    <p class="text-center">5</p>
                                 </div>
                                 <div class="col-4">
-                                    <p class="text-center">男山</p>
+                                    <p class="text-center dark-red">而今</p>
                                 </div>
-                                <div class="col-4">
-                                    <p class="text-center">北海道</p>
+                                <div class="col-4 px-0 px-md-2">
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-half start" viewBox="0 0 16 16">
+                                            <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <p>4.5 / 5星</p>
+                                    </div>
                                 </div>
                             </div>
                         </button>
@@ -918,13 +848,32 @@
                         <button class="collapsible bg-white p-4">
                             <div class="row">
                                 <div class="col-4">
-                                    <p class="dark-red text-center">糀おしろい</p>
+                                    <p class="text-center">6</p>
                                 </div>
                                 <div class="col-4">
-                                    <p class="text-center">アリサワ</p>
+                                    <p class="text-center dark-red">仙禽</p>
                                 </div>
-                                <div class="col-4">
-                                    <p class="text-center">高知県</p>
+                                <div class="col-4 px-0 px-md-2">
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-half start" viewBox="0 0 16 16">
+                                            <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <p>4.5 / 5星</p>
+                                    </div>
                                 </div>
                             </div>
                         </button>
@@ -999,13 +948,32 @@
                         <button class="collapsible bg-white p-4">
                             <div class="row">
                                 <div class="col-4">
-                                    <p class="dark-red text-center">男山</p>
+                                    <p class="text-center">7</p>
                                 </div>
                                 <div class="col-4">
-                                    <p class="text-center">男山</p>
+                                    <p class="text-center dark-red">田酒</p>
                                 </div>
-                                <div class="col-4">
-                                    <p class="text-center">北海道</p>
+                                <div class="col-4 px-0 px-md-2">
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-half start" viewBox="0 0 16 16">
+                                            <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <p>4.5 / 5星</p>
+                                    </div>
                                 </div>
                             </div>
                         </button>
@@ -1200,13 +1168,32 @@
                         <button class="collapsible bg-white p-4">
                             <div class="row">
                                 <div class="col-4">
-                                    <p class="dark-red text-center">糀おしろい</p>
-                                </div>
+                                    <p class="text-center">8</p>
+                            </div>
                                 <div class="col-4">
-                                    <p class="text-center">アリサワ</p>
+                                    <p class="text-center dark-red">鳳凰美田</p>
                                 </div>
-                                <div class="col-4">
-                                    <p class="text-center">高知県</p>
+                                <div class="col-4 px-0 px-md-2">
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-half start" viewBox="0 0 16 16">
+                                            <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <p>4.5 / 5星</p>
+                                    </div>
                                 </div>
                             </div>
                         </button>
@@ -1242,6 +1229,226 @@
                                     <p class="fw-bold mb-3">風味分析</p>
                                     <div class="w-100 py-5 mb-2 tag">
                                         <p class="text-white text-center">暫無資料...</p>
+                                    </div>
+                                    <p class="fw-bold">根據日本網友投稿數據分析呈現的風味表</p>
+                                </div>
+                                <div>
+                                    <p class="fw-bold mb-2">你可能會喜歡...</p>
+                                    <div class="border rounded-3 p-3">
+                                        <a href="#" class="text-decoration-none">
+                                            <small class="tag-text fw-bold">おいまつ</small>
+                                            <p class="fw-bold mb-5 text-dark">老松</p>
+                                        </a>
+                                        <div class="d-flex flex-row justify-content-between fw-bold">
+                                            <div class="text-secondary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                                                </svg>
+                                                <small><a href="#" class="text-decoration-none link-secondary">玉乃光酒造</a></small>
+                                            </div>
+                                            <div class="text-secondary">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" class="text-secondary">
+                                                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"></path>
+                                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
+                                                </svg>
+                                                <small><a href="#" class="text-decoration-none link-secondary">兵庫</a></small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="border-bottom">
+                    <div class="option position-relative">
+                        <button class="collapsible bg-white p-4">
+                            <div class="row">
+                                <div class="col-4">
+                                    <p class="text-center">9</p>
+                                </div>
+                                <div class="col-4">
+                                    <p class="text-center dark-red">冩楽</p>
+                                </div>
+                                <div class="col-4 px-0 px-md-2">
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-half start" viewBox="0 0 16 16">
+                                            <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <p>4.5 / 5星</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                        <div class="content">
+                            <div class="p-3 p-md-5 position-relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-heart position-absolute heart" viewBox="0 0 16 16">
+                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                </svg>
+                                <p class="mb-2">No. 2</p>
+                                <h1 class="mb-2 fw-bold">男山</h1>
+                                <div class="d-flex flex-row fw-bold mb-3">
+                                    <div class="text-secondary me-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"></path>
+                                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"></path>
+                                        </svg>
+                                        <small class="fs-6"><a href="#" class="text-decoration-none link-secondary">男山</a></small>
+                                    </div>
+                                    <div class="text-secondary ms-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="24" height="24" fill="currentColor" class="text-secondary">
+                                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"></path>
+                                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
+                                        </svg>
+                                        <small class="fs-6"><a href="#" class="text-decoration-none link-secondary">北海道</a></small>
+                                    </div>
+                                </div>
+                                <small class="text-white p-1 tag d-inline"># 風味標籤 tags</small>
+                                <div class="my-3 overflow-scroll">
+                                    <nav class="d-flex flex-row justify-content-between align-items-center flex-nowrap text-nowrap">
+                                        <a href="#" class="nav-link text-secondary p-3 nav-menuList"># 酸味</a>
+                                        <a href="#" class="nav-link text-secondary p-3 nav-menuList"># 辛口</a>
+                                        <a href="#" class="nav-link text-secondary p-3 nav-menuList"># 旨味</a>
+                                        <a href="#" class="nav-link text-secondary p-3 nav-menuList"># フルーティ</a>
+                                        <a href="#" class="nav-link text-secondary p-3 nav-menuList"># スッキリ</a>
+                                        <a href="#" class="nav-link text-secondary p-3 nav-menuList"># しっかり</a>
+                                        <a href="#" class="nav-link text-secondary p-3 nav-menuList"># 甘味</a>
+                                        <a href="#" class="nav-link text-secondary p-3 nav-menuList"># 苦味</a>
+                                        <a href="#" class="nav-link text-secondary p-3 nav-menuList"># コク</a>
+                                        <a href="#" class="nav-link text-secondary p-3 nav-menuList"># バランス</a>
+                                        <a href="#" class="nav-link text-secondary p-3 nav-menuList"># キレ</a>
+                                        <a href="#" class="nav-link text-secondary p-3 nav-menuList"># 綺麗</a>
+                                        <a href="#" class="nav-link text-secondary p-3 nav-menuList"># 穏やか</a>
+                                        <a href="#" class="nav-link text-secondary p-3 nav-menuList"># 柔らかい</a>
+                                        <a href="#" class="nav-link text-secondary p-3 nav-menuList"># フレッシュ</a>
+                                    </nav>
+                                </div>
+                                <div class="d-flex flex-row justify-content-around my-3">
+                                    <img class="image" src="https://aki168.github.io/sakeholic/media/006.jpg" alt="">
+                                    <img class="image" src="https://aki168.github.io/sakeholic/media/find1.jpg" alt="">
+                                </div>
+                                <div class="my-5">
+                                    <p class="fw-bold mb-3">風味分析</p>
+                                    <div class="analyze mx-sm-auto mx-0 d-flex flex-row justify-content-center">
+                                        <svg cx="50%" cy="50%" class="recharts-surface " width="330" height="300" viewBox="0 0 330 300" version="1.1">
+                                            <title></title>
+                                            <desc></desc>
+                                            <defs>
+                                                <clipPath id="recharts1273-clip">
+                                                    <rect x="5" y="5" height="290" width="320"></rect>
+                                                </clipPath>
+                                            </defs>
+                                            <g class="recharts-polar-grid">
+                                                <g class="recharts-polar-grid-angle">
+                                                    <line stroke="#ccc" cx="165" cy="150" x1="165" y1="150" x2="165" y2="30"></line>
+                                                    <line stroke="#ccc" cx="165" cy="150" x1="165" y1="150" x2="268.92304845413264" y2="90"></line>
+                                                    <line stroke="#ccc" cx="165" cy="150" x1="165" y1="150" x2="268.92304845413264" y2="210"></line>
+                                                    <line stroke="#ccc" cx="165" cy="150" x1="165" y1="150" x2="165" y2="270"></line>
+                                                    <line stroke="#ccc" cx="165" cy="150" x1="165" y1="150" x2="61.07695154586736" y2="210"></line>
+                                                    <line stroke="#ccc" cx="165" cy="150" x1="165" y1="150" x2="61.076951545867374" y2="89.99999999999999"></line>
+                                                </g>
+                                                <g class="recharts-polar-grid-concentric">
+                                                    <path stroke="#ccc" cx="165" cy="150" fill="none" class="recharts-polar-grid-concentric-polygon" d="M 165,150L 165,150L 165,150L 165,150L 165,150L 165,150Z"></path>
+                                                    <path stroke="#ccc" cx="165" cy="150" fill="none" class="recharts-polar-grid-concentric-polygon" d="M 165,120L 190.98076211353316,135L 190.98076211353316,165L 165,180L 139.01923788646684,165L 139.01923788646684,135Z"></path>
+                                                    <path stroke="#ccc" cx="165" cy="150" fill="none" class="recharts-polar-grid-concentric-polygon" d="M 165,90L 216.96152422706632,120L 216.96152422706632,180L 165,210L 113.03847577293368,180L 113.03847577293368,120Z"></path>
+                                                    <path stroke="#ccc" cx="165" cy="150" fill="none" class="recharts-polar-grid-concentric-polygon" d="M 165,60L 242.94228634059948,105L 242.94228634059948,195L 165,240L 87.05771365940052,195L 87.05771365940052,105Z"></path>
+                                                    <path stroke="#ccc" cx="165" cy="150" fill="none" class="recharts-polar-grid-concentric-polygon" d="M 165,30L 268.92304845413264,90L 268.92304845413264,210L 165,270L 61.07695154586736,210L 61.076951545867374,89.99999999999999Z"></path>
+                                                </g>
+                                            </g>
+                                            <g class="recharts-layer recharts-polar-angle-axis">
+                                                <path type="category" cx="165" cy="150" orientation="outer" radius="120" fill="none" class="recharts-polygon angleAxis" d="M165,30L268.92304845413264,90L268.92304845413264,210L165,270L61.07695154586736,210L61.076951545867374,89.99999999999999L165,30Z"></path>
+                                                <g class="recharts-layer recharts-polar-angle-axis-ticks">
+                                                    <g class="recharts-layer recharts-polar-angle-axis-tick">
+                                                        <line class="angleAxis" type="category" cx="165" cy="150" orientation="outer" radius="120" fill="none" x1="165" y1="30" x2="165" y2="22"></line>
+                                                        <text type="category" cx="165" cy="150" orientation="outer" radius="120" stroke="none" x="165" y="22" class="recharts-text recharts-polar-angle-axis-tick-value" text-anchor="middle">
+                                                            <tspan x="165" dy="0em">華麗豐富</tspan>
+                                                        </text>
+                                                    </g>
+                                                    <g class="recharts-layer recharts-polar-angle-axis-tick">
+                                                        <line class="angleAxis" type="category" cx="165" cy="150" orientation="outer" radius="120" fill="none" x1="268.92304845413264" y1="90" x2="275.85125168440817" y2="86"></line>
+                                                        <text type="category" cx="165" cy="150" orientation="outer" radius="120" stroke="none" x="275.85125168440817" y="86" class="recharts-text recharts-polar-angle-axis-tick-value" text-anchor="start">
+                                                            <tspan x="275.85125168440817" dy="0em">香醇</tspan>
+                                                        </text>
+                                                    </g>
+                                                    <g class="recharts-layer recharts-polar-angle-axis-tick">
+                                                        <line class="angleAxis" type="category" cx="165" cy="150" orientation="outer" radius="120" fill="none" x1="268.92304845413264" y1="210" x2="275.85125168440817" y2="214"></line>
+                                                        <text type="category" cx="165" cy="150" orientation="outer" radius="120" stroke="none" x="275.85125168440817" y="214" class="recharts-text recharts-polar-angle-axis-tick-value" text-anchor="start">
+                                                            <tspan x="275.85125168440817" dy="0em">濃厚</tspan>
+                                                        </text>
+                                                    </g>
+                                                    <g class="recharts-layer recharts-polar-angle-axis-tick">
+                                                        <line class="angleAxis" type="category" cx="165" cy="150" orientation="outer" radius="120" fill="none" x1="165" y1="270" x2="165" y2="278"></line>
+                                                        <text type="category" cx="165" cy="150" orientation="outer" radius="120" stroke="none" x="165" y="278" class="recharts-text recharts-polar-angle-axis-tick-value" text-anchor="middle">
+                                                            <tspan x="165" dy="0em">溫和順口</tspan>
+                                                        </text>
+                                                    </g>
+                                                    <g class="recharts-layer recharts-polar-angle-axis-tick">
+                                                        <line class="angleAxis" type="category" cx="165" cy="150" orientation="outer" radius="120" fill="none" x1="61.07695154586736" y1="210" x2="54.148748315591845" y2="214"></line>
+                                                        <text type="category" cx="165" cy="150" orientation="outer" radius="120" stroke="none" x="54.148748315591845" y="214" class="recharts-text recharts-polar-angle-axis-tick-value" text-anchor="end">
+                                                            <tspan x="54.148748315591845" dy="0em">擊喉感</tspan>
+                                                        </text>
+                                                    </g>
+                                                    <g class="recharts-layer recharts-polar-angle-axis-tick">
+                                                        <line class="angleAxis" type="category" cx="165" cy="150" orientation="outer" radius="120" fill="none" x1="61.076951545867374" y1="89.99999999999999" x2="54.14874831559186" y2="85.99999999999999"></line>
+                                                        <text type="category" cx="165" cy="150" orientation="outer" radius="120" stroke="none" x="54.14874831559186" y="85.99999999999999" class="recharts-text recharts-polar-angle-axis-tick-value" text-anchor="end">
+                                                            <tspan x="54.14874831559186" dy="0em">清爽</tspan>
+                                                        </text>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                            <g class="recharts-layer recharts-polar-radius-axis">
+                                                <line class="radiusAxis" type="number" orientation="right" stroke="#ccc" radius="120" fill="none" x1="165" y1="150" x2="285" y2="150"></line>
+                                                <g class="recharts-layer recharts-polar-radius-axis-ticks">
+                                                    <g class="recharts-layer recharts-polar-radius-axis-tick">
+                                                        <text transform="rotate(90, 165, 150)" type="number" cx="165" cy="150" orientation="right" radius="120" stroke="none" fill="#ccc" x="165" y="150" class="recharts-text recharts-polar-radius-axis-tick-value" text-anchor="start">
+                                                            <tspan x="165" dy="0em">0</tspan>
+                                                        </text>
+                                                    </g>
+                                                    <g class="recharts-layer recharts-polar-radius-axis-tick">
+                                                        <text transform="rotate(90, 195, 150)" type="number" cx="165" cy="150" orientation="right" radius="120" stroke="none" fill="#ccc" x="195" y="150" class="recharts-text recharts-polar-radius-axis-tick-value" text-anchor="start">
+                                                            <tspan x="195" dy="0em">0.15</tspan>
+                                                        </text>
+                                                    </g>
+                                                    <g class="recharts-layer recharts-polar-radius-axis-tick">
+                                                        <text transform="rotate(90, 225, 150)" type="number" cx="165" cy="150" orientation="right" radius="120" stroke="none" fill="#ccc" x="225" y="150" class="recharts-text recharts-polar-radius-axis-tick-value" text-anchor="start">
+                                                            <tspan x="225" dy="0em">0.3</tspan>
+                                                        </text>
+                                                    </g>
+                                                    <g class="recharts-layer recharts-polar-radius-axis-tick">
+                                                        <text transform="rotate(90, 255, 150)" type="number" cx="165" cy="150" orientation="right" radius="120" stroke="none" fill="#ccc" x="255" y="150" class="recharts-text recharts-polar-radius-axis-tick-value" text-anchor="start">
+                                                            <tspan x="255" dy="0em">0.45</tspan>
+                                                        </text>
+                                                    </g>
+                                                    <g class="recharts-layer recharts-polar-radius-axis-tick">
+                                                        <text transform="rotate(90, 285, 150)" type="number" cx="165" cy="150" orientation="right" radius="120" stroke="none" fill="#ccc" x="285" y="150" class="recharts-text recharts-polar-radius-axis-tick-value" text-anchor="start">
+                                                            <tspan x="285" dy="0em">0.6</tspan>
+                                                        </text>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                            <g class="recharts-layer recharts-radar">
+                                                <g class="recharts-layer recharts-radar-polygon">
+                                                    <path name="flavor" stroke="#BD2F26" fill="#BD2F26" fill-opacity="0.6" class="recharts-polygon" d="M165,92.5177088111334L235.34541114233022,109.38605794072076L215.56656405645106,179.19461936998647L165,243.89024791667885L77.66127625970256,200.42503566213907L88.99474540846158,106.11834580174924L165,92.5177088111334Z"></path>
+                                                </g>
+                                            </g>
+                                        </svg>
                                     </div>
                                     <p class="fw-bold">根據日本網友投稿數據分析呈現的風味表</p>
                                 </div>
@@ -1281,13 +1488,32 @@
                         <button class="collapsible bg-white p-4">
                             <div class="row">
                                 <div class="col-4">
-                                    <p class="dark-red text-center">男山</p>
+                                    <p class="text-center">10</p>
                                 </div>
                                 <div class="col-4">
-                                    <p class="text-center">男山</p>
+                                    <p class="dark-red text-center">鍋島</p>
                                 </div>
-                                <div class="col-4">
-                                    <p class="text-center">北海道</p>
+                                <div class="col-4 px-0 px-md-2">
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-fill start" viewBox="0 0 16 16">
+                                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-star-half start" viewBox="0 0 16 16">
+                                            <path d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <p>4.5 / 5星</p>
+                                    </div>
                                 </div>
                             </div>
                         </button>

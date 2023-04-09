@@ -1,0 +1,170 @@
+html{
+    font-family: 'Noto Sans', sans-serif;
+    position: relative;
+}
+
+h2{
+    color: #BD2F26;
+}
+
+p{
+    margin: 0;
+}
+
+.navbar{
+    background-color: #F3F1F2;
+}
+
+.red{
+    color: #BD2F26;
+}
+
+.login{
+    border: 1px solid #BD2F26;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.login:hover{
+    color: #fff;
+    background-color: #BD2F26;
+}
+
+.menu{
+    background-color: #fff ;
+}
+
+.section-title{
+    letter-spacing: 8px;
+}
+
+.section-subtitle{
+    letter-spacing: 5px;
+    font-size: 24px;
+}
+
+.popular{
+    border-bottom: 3px solid #BD2F26;
+}
+
+.bg-cover{
+    background-image: url(https://aki168.github.io/sakeholic/media/w002.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 350px;
+}
+
+.section{
+    max-width: 1320px;
+}
+
+.collapsible {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+  
+.option .collapsible::after {
+    content: "\25BC";
+    display: inline-block;
+    position: absolute;
+    right: 16px;
+    top: 23px;
+    margin-left: 0.5rem;
+    transition: transform 0.5s ease;
+}
+  
+.option .active::after {
+    transform: rotate(180deg);
+}
+  
+.option .show {
+    max-height: 1000px;
+}
+  
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+
+.thead{
+    background-color: #F3F1F2;
+}
+
+.dark-red{
+    color: #8B0000;
+}
+
+.tag{
+    background-color: #C8C4C4;
+    border: 1px solid #C8C4C4;
+    border-radius: 8px;
+}
+
+.tag-text{
+    color: #C8C4C4;
+}
+
+.image{
+    width: 49%;
+    height: auto;
+}
+
+.heart{
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+}
+
+.nav-menuList{
+    font-size: 14px;
+}
+
+.main-page{
+    cursor: pointer;
+}
+
+.page{
+    font-size: 14px;
+    padding: 4px 8px;
+    transition: .2s;
+}
+
+.page:hover{
+    
+    border-radius: 8px;
+    background-color: #C8C4C4;
+}
+
+.start{
+    color: #EAC100;
+}
+
+@media screen and (max-width: 576px)
+{
+    .navbar{
+        background-color: #000;
+    }
+
+    .title{
+        color: #fff;
+    }
+
+    .section-title{
+        font-size: 20px;
+    }
+
+    .section-subtitle{
+        font-size: 16px;
+    }
+
+    .analyze{
+        width: 100%;
+    }
+}
