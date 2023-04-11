@@ -34,6 +34,10 @@ p{
     background-color: #fff ;
 }
 
+.overview{
+    border-bottom: 3px solid #BD2F26;
+}
+
 .section-title{
     letter-spacing: 8px;
 }
@@ -43,16 +47,49 @@ p{
     font-size: 24px;
 }
 
-.popular{
-    border-bottom: 3px solid #BD2F26;
+.gray{
+    color: #6C757D;
 }
 
-.bg-cover{
-    background-image: url(https://aki168.github.io/sakeholic/media/w002.jpg);
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-    height: 350px;
+.search{
+    height: 60px;
+}
+
+.search::placeholder{
+    color: #6C757D;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.search:focus{
+    box-shadow: 0 0 0 0.25rem rgba(189, 47, 38, 0.25);
+}
+
+.box{
+    width: 100px;
+    color: #BD2F26;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.box:hover{
+    background-color: #BD2F26;
+    border-color: #BD2F26;
+    color: #fff;
+}
+
+.box:focus{
+    background-color: #BD2F26;
+    border-color: #BD2F26;
+    color: #fff;
+    box-shadow: 0 0 0 0.25rem rgba(189, 47, 38, 0.25);
+}
+
+.link{
+    background-color: #BD2F26;
+    border: 1px solid #BD2F26;
+    font-size: 12px;
+    padding: 2px 8px;
 }
 
 .section{
@@ -72,7 +109,7 @@ p{
     content: "\25BC";
     display: inline-block;
     position: absolute;
-    right: 16px;
+    right: 20px;
     top: 23px;
     margin-left: 0.5rem;
     transition: transform 0.5s ease;
@@ -126,6 +163,10 @@ p{
     font-size: 14px;
 }
 
+.analyze{
+    width: 50%;
+}
+
 .main-page{
     cursor: pointer;
 }
@@ -137,12 +178,9 @@ p{
 }
 
 .page:hover{
+    
     border-radius: 4px;
     background-color: #C8C4C4;
-}
-
-.start{
-    color: #EAC100;
 }
 
 @media screen and (max-width: 576px)

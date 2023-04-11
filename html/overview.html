@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">     
-    <link rel="stylesheet" href="../css/search.css">
+    <link rel="stylesheet" href="../css/overview.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
     <title>Document</title>
@@ -25,13 +25,13 @@
                             <a class="nav-link text-dark p-0" href="../html/about.html">關於小酌</a>
                         </li>
                         <li class="nav-item mx-3 my-2">
-                            <a class="nav-link text-dark p-0 search" href="../html/search.html">產地查詢</a>
+                            <a class="nav-link text-dark p-0" href="../html/search.html">產地查詢</a>
                         </li>
                         <li class="nav-item mx-3 my-2">
                             <a class="nav-link text-dark p-0" href="../html/popular.html">熱門排行</a>
                         </li>
                         <li class="nav-item mx-3 my-2">
-                            <a class="nav-link text-dark p-0" href="./overview.html">酒品總覽</a>
+                            <a class="nav-link text-dark p-0 overview" href="../html/overview.html">酒品總覽</a>
                         </li>
                         <li class="nav-item mx-3 my-2">
                             <a class="text-decoration-none" href="../html/login.html">
@@ -60,7 +60,7 @@
                                     <a class="nav-link text-dark p-0 fs-2" href="../html/popular.html">熱門排行</a>
                                 </li>
                                 <li class="nav-item mx-3 my-2">
-                                    <a class="nav-link text-dark p-0 fs-2" href="./overview.html">酒品總覽</a>
+                                    <a class="nav-link text-dark p-0 fs-2" href="../html/overview.html">酒品總覽</a>
                                 </li>
                                 <li class="nav-item mx-3 my-2">
                                     <a class="text-decoration-none" href="../html/login.html">
@@ -74,188 +74,44 @@
             </div>
         </div>
     </nav>
-    <section class="mb-5">
+    <section class="mb-4">
         <div class="container">
-            <div class="mb-4">
+            <div class="mb-3">
                 <div class="d-flex flex-row justify-content-between align-items-center">
-                    <h1 class="fw-bold section-title">產地查詢</h1>
+                    <h1 class="fw-bold section-title">酒品總覽</h1>
                     <hr class="w-50">
                 </div>
-                <p class="section-subtitle fw-light">地域別 厳選された日本酒</p>
+                <p class="section-subtitle fw-light">日本酒を探す</p>
             </div>
-        </div>
-        <div class="my-5">
-            <div class="wrap mx-auto position-relative">
-                <div class="northeast position-absolute">
-                    <p class="hokkaido items position-absolute purple">北海道</p>
-                    <p class="aomori items position-absolute purple">青森</p>
-                    <p class="akita items position-absolute purple">秋田</p>
-                    <p class="iwate items position-absolute purple">岩手</p>
-                    <p class="yamagata items position-absolute purple">山形</p>
-                    <p class="miyagi items position-absolute purple">宮城</p>
-                    <p class="fukushima items position-absolute purple">福島</p>
-                </div>
-                <div class="kanto position-absolute">
-                    <p class="gunma items position-absolute blue">群馬</p>
-                    <p class="tochigi items position-absolute blue">栃木</p>
-                    <p class="ibaraki items position-absolute blue">茨城</p>
-                    <p class="saitama items position-absolute blue">埼玉</p>
-                    <p class="chiba items position-absolute blue">千葉</p>
-                    <p class="tokyo items position-absolute blue">東京</p>
-                    <p class="kanagawa items position-absolute blue">神奈川</p>
-                </div>
-                <div class="middle position-absolute">
-                    <p class="niigata items position-absolute green">新瀉</p>
-                    <p class="toyama items position-absolute green">富山</p>
-                    <p class="ishikawa items position-absolute green">石川</p>
-                    <p class="fukui items position-absolute green">福井</p>
-                    <p class="nagano items position-absolute green">長野</p>
-                    <p class="gifu items position-absolute green">岐阜</p>
-                    <p class="yamanashi items position-absolute green">山梨</p>
-                    <p class="aichi items position-absolute green">愛知</p>
-                    <p class="shizuoka items position-absolute green">靜岡</p>
-                </div>
-                <div class="kinki position-absolute">
-                    <p class="kyoto items position-absolute yellow">京都</p>
-                    <p class="shiga items position-absolute yellow">滋賀</p>
-                    <p class="osaka items position-absolute yellow">大阪</p>
-                    <p class="nara items position-absolute yellow">奈良</p>
-                    <p class="triple items position-absolute yellow">三重</p>
-                    <p class="wakayama items position-absolute yellow">和歌山</p>
-                    <p class="hyogo items position-absolute yellow">兵庫</p>
-                </div>
-                <div class="china position-absolute">
-                    <p class="tottori items position-absolute orange">鳥取</p>
-                    <p class="okayama items position-absolute orange">岡山</p>
-                    <p class="shimane items position-absolute orange">島根</p>
-                    <p class="hiroshima items position-absolute orange">広島</p>
-                    <p class="yamaguchi items position-absolute orange">山口</p>
-                </div>
-                <div class="shikoku position-absolute">
-                    <p class="kagawa items position-absolute brown">香川</p>
-                    <p class="ehime items position-absolute brown">愛媛</p>
-                    <p class="tokushima items position-absolute brown">徳島</p>
-                    <p class="kochi items position-absolute brown">高知</p>
-                </div>
-                <div class="kyushu position-absolute">
-                    <p class="fukuoka items position-absolute pink">福岡</p>
-                    <p class="saga items position-absolute pink">佐賀</p>
-                    <p class="nagasaki items position-absolute pink">長崎</p>
-                    <p class="oita items position-absolute pink">大分</p>
-                    <p class="kumamoto items position-absolute pink">熊本</p>
-                    <p class="miyazaki items position-absolute pink">宮崎</p>
-                    <p class="kagoshima items position-absolute pink">鹿児島</p>
-                    <p class="okinawa items position-absolute pink">沖繩</p>
-                </div>
+            <div class="mb-3">
+                <h2 class="text-end m-0">共 3,085 款日本酒</h2>
             </div>
-            <div class="main-wrap">
-                <div class="container">
-                    <div class="my-3">
-                        <div class="text-center mb-3">
-                            <p>北海道・東北</p>
-                        </div>
-                        <div class="w-100 TwoRow">
-                            <p class="items purple">北海道</p>
-                            <p class="items purple">青森</p>
-                            <p class="items purple">秋田</p>
-                            <p class="items purple">岩手</p>
-                            <p class="items purple">山形</p>
-                            <p class="items purple">宮城</p>
-                            <p class="items purple">福島</p>
-                        </div>
-                    </div>
-                    <div class="my-3">
-                        <div class="text-center mb-3">
-                            <p>関東</p>
-                        </div>
-                        <div class="w-100 TwoRow">
-                            <p class="items blue">群馬</p>
-                            <p class="items blue">栃木</p>
-                            <p class="items blue">茨城</p>
-                            <p class="items blue">埼玉</p>
-                            <p class="items blue">千葉</p>
-                            <p class="items blue">東京</p>
-                            <p class="items blue">神奈川</p>
-                        </div>
-                    </div>
-                    <div class="my-3">
-                        <div class="text-center mb-3">
-                            <p>中部</p>
-                        </div>
-                        <div class="w-100 ThreeRow">
-                            <p class="items green">新瀉</p>
-                            <p class="items green">富山</p>
-                            <p class="items green">石川</p>
-                            <p class="items green">福井</p>
-                            <p class="items green">長野</p>
-                            <p class="items green">岐阜</p>
-                            <p class="items green">山梨</p>
-                            <p class="items green">愛知</p>
-                            <p class="items green">靜岡</p>
-                        </div>
-                    </div>
-                    <div class="my-3">
-                        <div class="text-center mb-3">
-                            <p>近畿</p>
-                        </div>
-                        <div class="w-100 TwoRow">
-                            <p class="items yellow">京都</p>
-                            <p class="items yellow">滋賀</p>
-                            <p class="items yellow">大阪</p>
-                            <p class="items yellow">奈良</p>
-                            <p class="items yellow">三重</p>
-                            <p class="items yellow">和歌山</p>
-                            <p class="items yellow">兵庫</p>
-                        </div>
-                    </div>
-                    <div class="my-3">
-                        <div class="text-center mb-3">
-                            <p>中国</p>
-                        </div>
-                        <div class="w-100 TwoRow">
-                            <p class="items orange">鳥取</p>
-                            <p class="items orange">岡山</p>
-                            <p class="items orange">島根</p>
-                            <p class="items orange">広島</p>
-                            <p class="items orange">山口</p>
-                        </div>
-                    </div>
-                    <div class="my-3">
-                        <div class="text-center mb-3">
-                            <p>四国</p>
-                        </div>
-                        <div class="w-100 OneRow">
-                            <p class="items brown">香川</p>
-                            <p class="items brown">愛媛</p>
-                            <p class="items brown">徳島</p>
-                            <p class="items brown">高知</p>
-                        </div>
-                    </div>
-                    <div class="my-3">
-                        <div class="text-center mb-3">
-                            <p>九州・沖縄</p>
-                        </div>
-                        <div class="w-100 TwoRow">
-                            <p class="items pink">福岡</p>
-                            <p class="items pink">佐賀</p>
-                            <p class="items pink">長崎</p>
-                            <p class="items pink">大分</p>
-                            <p class="items pink">熊本</p>
-                            <p class="items pink">宮崎</p>
-                            <p class="items pink">鹿児島</p>
-                            <p class="items pink">沖繩</p>
-                        </div>
-                    </div>
+            <div>
+                <div class="mb-3">
+                    <small class="gray">請以 酒名 / 酒廠 / 產地 進行搜尋</small>
+                </div>
+                <div class="mb-3">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control search border-dark" placeholder="請輸入檢索關鍵字" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary box" type="button" id="button-addon2">搜尋 →</button>
+                      </div>
+                </div>
+                <div>
+                    <small class="gray">熱門關鍵字.... </small>
+                        <a class="text-decoration-none text-white fw-medium link rounded-3 text-nowrap" href="#">#純米</a>
+                        <a class="text-decoration-none text-white fw-medium link rounded-3 text-nowrap" href="#">#赤武</a>
+                        <a class="text-decoration-none text-white fw-medium link rounded-3 text-nowrap" href="#">#獅祭</a>
+                        <a class="text-decoration-none text-white fw-medium link rounded-3 text-nowrap" href="#">#久保田</a>
+                        <a class="text-decoration-none text-white fw-medium link rounded-3 text-nowrap" href="#">#新瀉</a>
+                        <a class="text-decoration-none text-white fw-medium link rounded-3 text-nowrap" href="#">#吟釀</a>
+                        <a class="text-decoration-none text-white fw-medium link rounded-3 text-nowrap" href="#">#月桂冠</a>
+                        <a class="text-decoration-none text-white fw-medium link rounded-3 text-nowrap" href="#">#白鶴</a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section mx-auto mb-5">
+    <section class="mx-auto mb-5 section">
         <div class="container">
-            <div class="table-title mb-3">
-                <h3 class="h2 mb-1">ALL</h3>
-                <p class="mb-2">請選擇您想探索的城市</p>
-            </div>
             <div>
                 <div class="row thead m-0">
                     <div class="col-4 p-0">

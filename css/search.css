@@ -598,13 +598,13 @@ p{
 
 .page{
     font-size: 14px;
-    padding: 4px 8px;
+    padding: 2px 4px;
     transition: .2s;
 }
 
 .page:hover{
     
-    border-radius: 8px;
+    border-radius: 4px;
     background-color: #C8C4C4;
 }
 
