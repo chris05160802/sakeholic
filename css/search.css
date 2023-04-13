@@ -66,6 +66,12 @@ p{
 .items:hover{
     opacity: 0.5;
 }
+
+.map{
+    transition-timing-function: ease;
+    transform: translateZ(0) scale(1);
+    transition-duration: 2s;
+}
 /** northeast **/
 .northeast{
     left: 638px;
