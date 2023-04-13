@@ -68,9 +68,18 @@ p{
 }
 
 .map{
-    transition-timing-function: ease;
-    transform: translateZ(0) scale(1);
-    transition-duration: 2s;
+    animation: moveIn 2s ease;
+}
+
+@keyframes moveIn {
+    0% {
+        transform: translateZ(500px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateZ(0);
+        opacity: 1;
+    }
 }
 /** northeast **/
 .northeast{
